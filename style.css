@@ -1,0 +1,152 @@
+body{
+    background-color: black;
+    margin: 30px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+.navbar{
+    border: 2px solid gray;
+    border-radius: 20px;
+
+    padding: 30px 50px;
+
+    font-size: 48px;
+}
+
+.main_container{
+    margin-top: 25px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 20px;
+
+    font-size: 24px;
+}
+
+.side_container{
+    width: 450px;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    row-gap: 20px;
+}
+
+.container{
+    border: 2px solid gray;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.container1 img{
+    width: 190px;
+    height: 190px;
+    border-radius: 190px;
+}
+
+.container1{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 15px;
+}
+
+.container3{
+    padding-left: 40px;
+}
+
+.container3 .icons{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.container3 div{
+    margin-top: 10px;
+    color: #808080;
+}
+
+.table_container{
+    border: 2px solid gray;
+    border-radius: 20px;
+
+    flex-grow: 1;
+
+    padding: 30px;
+}
+
+.table_container h1{
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.table_container .task_table{
+    border: 1px solid gray;
+    border-radius: 20px;
+
+    width: 100%;
+
+    border-spacing: 0;
+
+    color: #808080;
+}
+
+.task_table tr th, .task_table tr td{
+    padding: 15px 20px;
+}
+
+.task_table thead tr th{
+    text-align: left;
+    font-weight: 200;
+
+    border-bottom: 1px solid gray;
+}
+
+.task_table tbody tr td, thead tr th{
+    border-right: 1px solid gray;
+}
+
+.task_table td:nth-child(3), th:nth-child(3){
+    border-right: none;
+}
+
+.task_table td:nth-child(1), .task_table td:nth-child(2){
+    text-align: center;
+}
+
+input{
+    display: none;
+}
+
+label{
+    display: inline-block;
+
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid #808080;
+    border-radius: 2px;
+}
+
+
+@media(max-width:1160px) {
+    .main_container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .side_container{
+        width: 100%;
+    }
+}
+
+
+
+
